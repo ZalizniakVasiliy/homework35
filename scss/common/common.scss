@@ -5,13 +5,8 @@
 @import "./mixins.scss";
 @import "./animations.scss";
 
-body {
-  font-family: $default-font;
-  font-size: 12px;
-}
-
 .container {
-  max-width: $content-width;
+  max-width: 1415px;
   padding: 0 12.5px;
   margin: 0 auto;
 }

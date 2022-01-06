@@ -1,111 +1,131 @@
 header {
+  padding: 18px 117px;
+  display: flex;
+
   .header-content {
-    padding: 27px 0;
+    max-width: $header-content-width;
+    margin: 0;
     display: flex;
+    align-items: center;
+
+    // .status-wrapper {
+    //   margin: 0 73px 0 0;
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+    // }
+
+    // .status:before {
+    //   content: "";
+    //   display: block;
+    //   width: 26px;
+    //   height: 26px;
+    //   border-radius: 50%;
+    //   background-image: url("./../../../images/status_logo.jpg");
+    //   color: $status-color;
+    // }
+
+    // .social-icon__telegram:before {
+    //   content: "";
+    //   display: block;
+    //   width: 15px;
+    //   height: 13px;
+    //   background-image: url("./../../../images/telegram_logo.svg");
+    // }
+
+    // .social-icon__medium:before {
+    //   content: "";
+    //   display: block;
+    //   width: 17px;
+    //   height: 13px;
+    //   background-image: url("./../../../images/media-logo.svg");
+    // }
+    // }
   }
 
-  menu {
-    margin-right: 360px;
+  & .status-logo {
+    display: block;
+    margin: 0 73px 0 0;
+  }
+
+  & menu {
+    margin: 0 360px 0 0;
+    padding: 0;
     display: flex;
     list-style: none;
 
-    li {
-      position: relative;
-    }
-
     li:not(:last-child) {
-      margin-right: 42px;
+      margin-right: 46px;
     }
 
     a {
       color: $headerItemsMenu-color;
-      font-family: Quicksand;
+      font-family: "Quicksand";
       font-style: normal;
       font-weight: 500;
       font-size: 12px;
       line-height: 15px;
-      text-shadow: 0px 0px 5px #e6e6e6;
     }
 
     .item-link {
       color: $headerFirstItemMenu-color;
-      font-family: Quicksand;
+      font-family: "Quicksand";
       font-style: normal;
-      font-weight: bold;
+      font-weight: 700;
       font-size: 12px;
       line-height: 15px;
-      text-shadow: 0px 0px 5px #e6e6e6;
-    }
-
-    .item-link:before {
-      content: "";
-      display: block;
-      width: 26px;
-      height: 26px;
-      margin-right: 72px;
-      border-radius: 50%;
-      background-image: url("./../../../images/status_logo.jpg");
-      color: $status-color;
-      position: absolute;
-      top: 50%;
-      right: 50%;
-      transform: translate(-50%, -50%);
     }
   }
-}
 
-.list-social-icons {
-  display: flex;
-  align-items: center;
-  font-size: 0;
-
-  li:not(:last-child) {
-    margin-right: 36px;
-  }
-
-  a {
-    color: $socialIcon-color;
-    font-size: 13px;
-  }
-
-  .social-icon__twitter {
-    color: $socialIconTwitter-color;
-  }
-
-  li {
+  & .list-social-icons {
     margin-right: 44px;
     display: flex;
     align-items: center;
+    font-size: 0;
+
+    li:not(:last-child) {
+      margin-right: 36px;
+    }
+
+    a {
+      // display: block;
+      color: $socialIcon-color;
+      font-size: 12px;
+    }
+
+    .social-icon__twitter {
+      color: $socialIconTwitter-color;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+    }
+
+    .telegram-img {
+      display: block;
+      max-width: none;
+    }
+
+    .media-img {
+      display: block;
+      max-width: none;
+      height: 13px;
+    }
   }
 
-  .social-icon__telegram:before {
-    content: "";
-    display: block;
-    width: 15px;
-    height: 13px;
-    background-image: url("./../../../images/telegram_logo.svg");
+  & .header-btn {
+    display: inline-block;
+    padding: 13px 19px;
+    border: none;
+    border-radius: 2px;
+    color: #3a79ff;
+    background-color: #d2e1ff;
+    font-family: "Quicksand";
+    font-size: 13px;
+    line-height: 16.25px;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
   }
-
-  .social-icon__medium:before {
-    content: "";
-    display: block;
-    width: 17px;
-    height: 13px;
-    background-image: url("./../../../images/media-logo.svg");
-  }
-}
-
-.header-btn {
-  display: inline-block;
-  padding: 13px 16px;
-  border: none;
-  border-radius: 2px;
-  color: #3a79ff;
-  background-color: #d2e1ff;
-  font-size: 13px;
-  line-height: 16px;
-  font-family: Quicksand;
-  font-style: normal;
-  font-weight: bold;
-  cursor: pointer;
 }

@@ -1,4 +1,45 @@
-/*change later*/
+@font-face {
+  font-family: "Roboto";
+  src: url("../../styles/imports/Roboto-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../../styles/imports/QuicksandBold-Regular.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../styles/imports/OpenSans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../styles/imports/Roboto-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../../styles/imports/QuicksandBold-Regular.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../styles/imports/OpenSans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 *,
 *::before,
 *::after {
@@ -67,14 +108,8 @@ select {
     scroll-behavior: auto !important;
   }
 }
-/*change later*/
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 12px;
-}
-
 .container {
-  max-width: 1225px;
+  max-width: 1415px;
   padding: 0 12.5px;
   margin: 0 auto;
 }
@@ -100,101 +135,86 @@ a {
   margin: 0;
 }
 
-header .header-content {
-  padding: 27px 0;
+header {
+  padding: 18px 117px;
   display: flex;
 }
+header .header-content {
+  max-width: 1208px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+header .status-logo {
+  display: block;
+  margin: 0 73px 0 0;
+}
 header menu {
-  margin-right: 360px;
+  margin: 0 360px 0 0;
+  padding: 0;
   display: flex;
   list-style: none;
 }
-header menu li {
-  position: relative;
-}
 header menu li:not(:last-child) {
-  margin-right: 42px;
+  margin-right: 46px;
 }
 header menu a {
   color: #697ca6;
-  font-family: Quicksand;
+  font-family: "Quicksand";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
-  text-shadow: 0px 0px 5px #e6e6e6;
 }
 header menu .item-link {
   color: #5e81fe;
-  font-family: Quicksand;
+  font-family: "Quicksand";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   line-height: 15px;
-  text-shadow: 0px 0px 5px #e6e6e6;
 }
-header menu .item-link:before {
-  content: "";
-  display: block;
-  width: 26px;
-  height: 26px;
-  margin-right: 72px;
-  border-radius: 50%;
-  background-image: url("./../../../images/status_logo.jpg");
-  color: #5e81fe;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.list-social-icons {
+header .list-social-icons {
+  margin-right: 44px;
   display: flex;
   align-items: center;
   font-size: 0;
 }
-.list-social-icons li:not(:last-child) {
+header .list-social-icons li:not(:last-child) {
   margin-right: 36px;
 }
-.list-social-icons a {
+header .list-social-icons a {
   color: #b6bac7;
-  font-size: 13px;
+  font-size: 12px;
 }
-.list-social-icons .social-icon__twitter {
+header .list-social-icons .social-icon__twitter {
   color: #6188ff;
 }
-.list-social-icons li {
-  margin-right: 44px;
+header .list-social-icons li {
   display: flex;
   align-items: center;
 }
-.list-social-icons .social-icon__telegram:before {
-  content: "";
+header .list-social-icons .telegram-img {
   display: block;
-  width: 15px;
-  height: 13px;
-  background-image: url("./../../../images/telegram_logo.svg");
+  max-width: none;
 }
-.list-social-icons .social-icon__medium:before {
-  content: "";
+header .list-social-icons .media-img {
   display: block;
-  width: 17px;
+  max-width: none;
   height: 13px;
-  background-image: url("./../../../images/media-logo.svg");
 }
-
-.header-btn {
+header .header-btn {
   display: inline-block;
-  padding: 13px 16px;
+  padding: 13px 19px;
   border: none;
   border-radius: 2px;
   color: #3a79ff;
   background-color: #d2e1ff;
+  font-family: "Quicksand";
   font-size: 13px;
-  line-height: 16px;
-  font-family: Quicksand;
+  line-height: 16.25px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
 }
 
