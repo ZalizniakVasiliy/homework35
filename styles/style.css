@@ -1,12 +1,19 @@
 @font-face {
   font-family: "Roboto";
-  src: url("../../styles/imports/Roboto-Black.woff2") format("woff2");
-  font-weight: 900;
+  src: url("../../styles/imports/RobotoSlab-Regular.woff2") format("woff2");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Quicksand";
+  src: url("../../styles/imports/QuicksandLight-Regular.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "QuicksandBold";
   src: url("../../styles/imports/QuicksandBold-Regular.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
@@ -21,13 +28,20 @@
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../../styles/imports/Roboto-Black.woff2") format("woff2");
-  font-weight: 900;
+  src: url("../../styles/imports/RobotoSlab-Regular.woff2") format("woff2");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Quicksand";
+  src: url("../../styles/imports/QuicksandLight-Regular.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "QuicksandBold";
   src: url("../../styles/imports/QuicksandBold-Regular.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
@@ -109,9 +123,9 @@ select {
   }
 }
 .container {
-  max-width: 1415px;
-  padding: 0 12.5px;
   margin: 0 auto;
+  max-width: 1470px;
+  padding: 0 15px;
 }
 
 a {
@@ -135,87 +149,165 @@ a {
   margin: 0;
 }
 
-header {
+header .wrapper-header-content {
+  margin: 0;
   padding: 18px 117px;
   display: flex;
 }
-header .header-content {
-  max-width: 1208px;
+header .wrapper-header-content .header-content {
+  max-width: 1206px;
   margin: 0;
   display: flex;
   align-items: center;
 }
-header .status-logo {
+header .wrapper-header-content .header-content .status-logo {
   display: block;
   margin: 0 73px 0 0;
+  border-radius: 50%;
 }
-header menu {
+header .wrapper-header-content .header-content menu {
   margin: 0 360px 0 0;
   padding: 0;
   display: flex;
   list-style: none;
 }
-header menu li:not(:last-child) {
-  margin-right: 46px;
+header .wrapper-header-content .header-content menu li:not(:last-child) {
+  margin-right: 40px;
 }
-header menu a {
+header .wrapper-header-content .header-content menu a {
+  display: block;
   color: #697ca6;
-  font-family: "Quicksand";
+  font-family: "QuicksandBold";
   font-style: normal;
-  font-weight: 500;
   font-size: 12px;
   line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
 }
-header menu .item-link {
+header .wrapper-header-content .header-content menu .item-link {
   color: #5e81fe;
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
+  font-family: "QuicksandBold";
 }
-header .list-social-icons {
+header .wrapper-header-content .header-content .list-social-icons {
   margin-right: 44px;
   display: flex;
   align-items: center;
   font-size: 0;
 }
-header .list-social-icons li:not(:last-child) {
+header .wrapper-header-content .header-content .list-social-icons li:not(:last-child) {
   margin-right: 36px;
 }
-header .list-social-icons a {
+header .wrapper-header-content .header-content .list-social-icons a {
+  display: block;
   color: #b6bac7;
   font-size: 12px;
 }
-header .list-social-icons .social-icon__twitter {
+header .wrapper-header-content .header-content .list-social-icons .social-icon__twitter {
   color: #6188ff;
 }
-header .list-social-icons li {
+header .wrapper-header-content .header-content .list-social-icons li {
   display: flex;
   align-items: center;
 }
-header .list-social-icons .telegram-img {
+header .wrapper-header-content .header-content .list-social-icons .telegram-img {
   display: block;
   max-width: none;
 }
-header .list-social-icons .media-img {
+header .wrapper-header-content .header-content .list-social-icons .media-img {
   display: block;
   max-width: none;
   height: 13px;
 }
-header .header-btn {
-  display: inline-block;
+header .wrapper-header-content .header-content .header-btn {
+  display: block;
   padding: 13px 19px;
-  border: none;
   border-radius: 2px;
   color: #3a79ff;
   background-color: #d2e1ff;
-  font-family: "Quicksand";
+  font-family: "QuicksandBold";
   font-size: 13px;
   line-height: 16.25px;
   font-style: normal;
   font-weight: 700;
   cursor: pointer;
+}
+
+.hero-wrapper-background {
+  background-image: linear-gradient(180deg, #f4f7ff 0%, #f1f5ff 100%);
+}
+
+.hero-wrapper {
+  height: 570px;
+  display: flex;
+  justify-content: center;
+  background-image: url("../../../images/background-image_hero.png");
+}
+
+.hero-context {
+  max-width: 584px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-title {
+  margin-top: 92px;
+  color: #3d4f9f;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero-logo {
+  margin-top: 16px;
+  color: #3d4f9f;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 60px;
+  white-space: nowrap;
+}
+
+.nested-text {
+  display: inline-block;
+  font-family: "QuicksandBold";
+}
+
+.hero-description {
+  max-width: 512px;
+  margin-top: 28px;
+  color: #8D96BD;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+}
+
+.picture-playing {
+  display: block;
+  width: 52px;
+  height: 52px;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.elem-play_button {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=style.css.map */

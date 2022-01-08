@@ -1,12 +1,100 @@
 header {
-  padding: 18px 117px;
-  display: flex;
-
-  .header-content {
-    max-width: $header-content-width;
+  .wrapper-header-content {
     margin: 0;
+    padding: 18px 117px;
     display: flex;
-    align-items: center;
+
+    .header-content {
+      max-width: $header-content-width;
+      margin: 0;
+      display: flex;
+      align-items: center;
+
+      .status-logo {
+        display: block;
+        margin: 0 73px 0 0;
+        border-radius: 50%;
+      }
+
+      menu {
+        margin: 0 360px 0 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+
+        li:not(:last-child) {
+          margin-right: 40px;
+        }
+
+        a {
+          display: block;
+          color: $headerItemsMenu-color;
+          font-family: "QuicksandBold";
+          font-style: normal;
+          font-size: 12px;
+          line-height: 15px;
+          text-align: center;
+          letter-spacing: 0.05em;
+          text-transform: capitalize;
+        }
+
+        .item-link {
+          color: $headerFirstItemMenu-color;
+          font-family: "QuicksandBold";
+        }
+      }
+
+      .list-social-icons {
+        margin-right: 44px;
+        display: flex;
+        align-items: center;
+        font-size: 0;
+
+        li:not(:last-child) {
+          margin-right: 36px;
+        }
+
+        a {
+          display: block;
+          color: $socialIcon-color;
+          font-size: 12px;
+        }
+
+        .social-icon__twitter {
+          color: $socialIconTwitter-color;
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+        }
+
+        .telegram-img {
+          display: block;
+          max-width: none;
+        }
+
+        .media-img {
+          display: block;
+          max-width: none;
+          height: 13px;
+        }
+      }
+
+      .header-btn {
+        display: block;
+        padding: 13px 19px;
+        border-radius: 2px;
+        color: #3a79ff;
+        background-color: #d2e1ff;
+        font-family: "QuicksandBold";
+        font-size: 13px;
+        line-height: 16.25px;
+        font-style: normal;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
 
     // .status-wrapper {
     //   margin: 0 73px 0 0;
@@ -41,91 +129,5 @@ header {
     //   background-image: url("./../../../images/media-logo.svg");
     // }
     // }
-  }
-
-  & .status-logo {
-    display: block;
-    margin: 0 73px 0 0;
-  }
-
-  & menu {
-    margin: 0 360px 0 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-
-    li:not(:last-child) {
-      margin-right: 46px;
-    }
-
-    a {
-      color: $headerItemsMenu-color;
-      font-family: "Quicksand";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 15px;
-    }
-
-    .item-link {
-      color: $headerFirstItemMenu-color;
-      font-family: "Quicksand";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 15px;
-    }
-  }
-
-  & .list-social-icons {
-    margin-right: 44px;
-    display: flex;
-    align-items: center;
-    font-size: 0;
-
-    li:not(:last-child) {
-      margin-right: 36px;
-    }
-
-    a {
-      // display: block;
-      color: $socialIcon-color;
-      font-size: 12px;
-    }
-
-    .social-icon__twitter {
-      color: $socialIconTwitter-color;
-    }
-
-    li {
-      display: flex;
-      align-items: center;
-    }
-
-    .telegram-img {
-      display: block;
-      max-width: none;
-    }
-
-    .media-img {
-      display: block;
-      max-width: none;
-      height: 13px;
-    }
-  }
-
-  & .header-btn {
-    display: inline-block;
-    padding: 13px 19px;
-    border: none;
-    border-radius: 2px;
-    color: #3a79ff;
-    background-color: #d2e1ff;
-    font-family: "Quicksand";
-    font-size: 13px;
-    line-height: 16.25px;
-    font-style: normal;
-    font-weight: 700;
-    cursor: pointer;
   }
 }

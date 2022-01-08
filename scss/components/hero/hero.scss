@@ -1,0 +1,76 @@
+.hero-wrapper-background {
+  background-image: linear-gradient(180deg, #f4f7ff 0%, #f1f5ff 100%);
+}
+
+.hero-wrapper {
+  height: 570px;
+  display: flex;
+  justify-content: center;
+  background-image: url("../../../images/background-image_hero.png");
+}
+
+.hero-context {
+  max-width: 584px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-title {
+  margin-top: 92px;
+  color: $hero-titleLogo-color;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero-logo {
+  margin-top: 16px;
+  color: $hero-titleLogo-color;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 60px;
+  white-space: nowrap;
+}
+
+.nested-text {
+  display: inline-block;
+  font-family: "QuicksandBold";
+}
+
+.hero-description {
+  max-width: 512px;
+  margin-top: 28px;
+  color: $hero-description-color;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+}
+
+.picture-playing {
+  display: block;
+  width: 52px;
+  height: 52px;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.elem-play_button {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

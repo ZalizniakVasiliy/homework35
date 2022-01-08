@@ -1,14 +1,15 @@
-@import "./fonts.scss";
-@import "./reset.scss";
-@import "./variables.scss";
-@import "./extends.scss";
-@import "./mixins.scss";
-@import "./animations.scss";
+@import "./fonts";
+@import "./reset";
+@import "./variables";
+@import "./extends";
+@import "./mixins";
+@import "./animations";
 
 .container {
-  max-width: 1415px;
-  padding: 0 12.5px;
   margin: 0 auto;
+  max-width: 1470px;
+  padding: 0 15px;
+  
 }
 
 a {

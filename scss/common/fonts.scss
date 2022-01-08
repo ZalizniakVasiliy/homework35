@@ -1,13 +1,21 @@
 @font-face {
   font-family: "Roboto";
-  src: url("../../styles/imports/Roboto-Black.woff2") format("woff2");
-  font-weight: 900;
+  src: url("../../styles/imports/RobotoSlab-Regular.woff2") format("woff2");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Quicksand";
+  src: url("../../styles/imports/QuicksandLight-Regular.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "QuicksandBold";
   src: url("../../styles/imports/QuicksandBold-Regular.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
