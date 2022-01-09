@@ -1,17 +1,19 @@
 .plan_manage {
   .plan_manage-content {
     height: 776px;
-    padding-top: 208px;
+    padding-top: 170px;
+    display: flex;
     background-color: #f5f8ff;
 
     .content-text {
       max-width: 414px;
-      margin: 0 0 0 271px;
+      margin: 0 55px 0 271px;
 
       .plan_manage-title {
+        margin-top: 38px;
         font-family: "Roboto";
         font-style: normal;
-        font-weight: 500;
+        font-weight: bolder;
         font-size: 10px;
         line-height: 12px;
         letter-spacing: 0.1em;
@@ -23,7 +25,7 @@
         margin-top: 27px;
         font-family: "Quicksand";
         font-style: normal;
-        font-weight: 500;
+        font-weight: bolder;
         font-size: 36px;
         line-height: 45px;
         color: #3d4f9f;
@@ -45,49 +47,52 @@
       }
 
       .wrapper-button-video {
-        display: inline-block;
+        margin-top: 47px;
+        display: flex;
         position: relative;
-      }
 
-      .btn-primary {
-        display: inline-block;
-        padding: 13px 37px 13px 25px;
-        border-radius: 2px;
-        background-color: #4c85ff;
-        font-family: "Quicksand";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 13px;
-        line-height: 16px;
-        align-items: center;
-        color: #ffffff;
-        cursor: pointer;
-      }
+        .btn-primary {
+          display: inline-block;
+          padding: 13px 37px 13px 25px;
+          border-radius: 2px;
+          background-color: #4c85ff;
+          font-family: "QuicksandBold";
+          font-style: normal;
+          font-weight: bold;
+          font-size: 13px;
+          line-height: 16px;
+          align-items: center;
+          color: #ffffff;
+          cursor: pointer;
+        }
 
-      .pointer-video-icon {
-        display: block;
-        width: 6.5px;
-        height: 7.2px;
-        margin-left: 99px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-30%);
-      }
+        .pointer-video-icon {
+          width: 6.5px;
+          height: 7.2px;
+          margin-left: 102px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
 
-      .btn-secondary {
-        display: inline-block;
-        padding: 13px 37px 13px 25px;
-        border-radius: 2px;
-        border: 1px solid #d1d1e4;
-        font-family: "Quicksand";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 13px;
-        line-height: 16px;
-        align-items: center;
-        color: #adb4d2;
-        cursor: pointer;
+        .btn-secondary {
+          display: inline-block;
+          padding: 13px 37px 13px 25px;
+          border-radius: 2px;
+          border: 1px solid #d1d1e4;
+          font-family: "Quicksand";
+          font-style: normal;
+          font-weight: bolder;
+          font-size: 13px;
+          line-height: 16px;
+          align-items: center;
+          color: #adb4d2;
+          cursor: pointer;
+        }
       }
+    }
+    .wrapper-illustration {
+      max-width: 652px;
     }
   }
 }
