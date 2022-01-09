@@ -1,0 +1,25 @@
+.customers {
+  .wrapper-content-customers {
+    .border-line {
+      border: 1px solid #d8e3fe;
+    }
+
+    .content-customers {
+      height: 146px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .customer-name {
+      width: 116px;
+      height: 29px;
+      margin-right: 76px;
+      color: #d6dae5;
+    }
+
+    .customer-name__another-color {
+      color: $customerNameAtlassian-color;
+    }
+  }
+}
