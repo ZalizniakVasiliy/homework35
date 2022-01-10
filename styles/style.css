@@ -464,4 +464,90 @@ header .wrapper-header-content .header-content .header-btn {
   max-width: 652px;
 }
 
+.features .about-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features .about-app .about-us .title {
+  margin-top: 171px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #3d4f9f;
+}
+.features .about-app .about-us .logo {
+  margin-top: 20px;
+  font-family: "QuicksandBold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #3d4f9f;
+}
+.features .about-app .features-content {
+  max-width: 761px;
+  margin-top: 92px;
+}
+.features .about-app .features-content .features-list {
+  display: flex;
+}
+.features .about-app .features-content .features-list .features-item {
+  display: flex;
+}
+.features .about-app .features-content .features-list .features-item .features-item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features .about-app .features-content .features-list .features-item .features-item-content .features-icon {
+  border-radius: 50%;
+}
+.features .about-app .features-content .features-list .features-item .features-item-content .description {
+  max-width: 140px;
+  text-align: center;
+}
+.features .about-app .features-content .features-list .features-item .line-hyphen-list {
+  margin-left: 20px;
+}
+.features .about-app .features-content .features-item:not(:last-child) {
+  margin: 0 67px 0 0;
+}
+.features .about-app .features-buttons {
+  display: flex;
+  align-items: center;
+}
+.features .about-app .features-buttons .btn_first {
+  display: block;
+  padding: 13px 19px;
+  border-radius: 2px;
+  color: #3a79ff;
+  background-color: #d2e1ff;
+  font-family: "QuicksandBold";
+  font-size: 13px;
+  line-height: 16.25px;
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+}
+.features .about-app .features-buttons .btn_second {
+  display: block;
+  padding: 13px 19px;
+  border-radius: 2px;
+  color: #3a79ff;
+  background-color: #d2e1ff;
+  font-family: "QuicksandBold";
+  font-size: 13px;
+  line-height: 16.25px;
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */
