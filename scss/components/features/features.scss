@@ -1,101 +1,153 @@
 .features {
   .about-app {
+    padding: 141px 114px 171px 126px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 
-    .about-us {
-      .title {
-        margin-top: 171px;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: bolder;
-        font-size: 10px;
-        line-height: 12px;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        text-align: center;
-        color: #3d4f9f;
-      }
+    .background-around-features-content {
+      max-width: 1200px;
+      max-height: 543px;
+      padding: 30px 226px 0 214px;
+      background-image: url("../../../images/clouds_features-back.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
 
-      .logo {
-        margin-top: 20px;
-        font-family: "QuicksandBold";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 30px;
-        text-align: center;
-        color: #3d4f9f;
-      }
-    }
+      .wrapper-features-content {
+        max-width: 760px;
 
-    .features-content {
-      max-width: 761px;
-      margin-top: 92px;
-
-      .features-list {
-        display: flex;
-
-        .features-item {
-          display: flex;
-          // align-items: center;
-
-          .features-item-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            .features-icon {
-              border-radius: 50%;
-            }
-
-            .description {
-              max-width: 140px;
-              text-align: center;
-            }
+        .about-us {
+          .title {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: bolder;
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            text-align: center;
+            color: #3d4f9f;
           }
 
-          .line-hyphen-list {
-            margin-left: 20px;
+          .logo {
+            margin-top: 20px;
+            font-family: "QuicksandBold";
+            font-style: normal;
+            font-weight: bolder;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+            color: #3d4f9f;
           }
         }
-      }
-      .features-item:not(:last-child) {
-        margin: 0 67px 0 0;
-      }
-    }
 
-    .features-buttons {
-      display: flex;
-      align-items: center;
+        .features-content {
+          margin-top: 92px;
 
-      .btn_first {
-        display: block;
-        padding: 13px 19px;
-        border-radius: 2px;
-        color: #3a79ff;
-        background-color: #d2e1ff;
-        font-family: "QuicksandBold";
-        font-size: 13px;
-        line-height: 16.25px;
-        font-style: normal;
-        font-weight: 700;
-        cursor: pointer;
-      }
+          .features-list {
+            display: flex;
 
-      .btn_second {
-        display: block;
-        padding: 13px 19px;
-        border-radius: 2px;
-        color: #3a79ff;
-        background-color: #d2e1ff;
-        font-family: "QuicksandBold";
-        font-size: 13px;
-        line-height: 16.25px;
-        font-style: normal;
-        font-weight: 700;
-        cursor: pointer;
+            .features-item {
+              display: flex;
+
+              .features-item-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .features-icon {
+                  width: 69px;
+                  height: 69px;
+                  border-radius: 50%;
+                }
+
+                .title {
+                  margin-top: 33px;
+                  font-family: "Open Sans";
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 14px;
+                  line-height: 25px;
+                  text-align: center;
+                  color: #4074f8;
+                }
+
+                .description {
+                  max-width: 140px;
+                  min-height: 102px;
+                  margin-top: 25px;
+                  text-align: center;
+                  font-family: "Open Sans";
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 11px;
+                  line-height: 19px;
+                  text-align: center;
+                  color: #adb3cb;
+                }
+              }
+
+              .line-hyphen-list {
+                max-width: 28px;
+                margin: 0 19px 0 20px;
+                color: #dae4fe;
+              }
+            }
+          }
+        }
+
+        .features-buttons {
+          max-width: 337px;
+          margin: 92px 0 0 212px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .btn_first {
+            display: block;
+            padding: 13px 22px;
+            border-radius: 2px;
+            color: #d43f3f;
+            background-color: #ffd7d7;
+            font-family: "QuicksandBold";
+            font-size: 13px;
+            line-height: 16.25px;
+            font-style: normal;
+            font-weight: bold;
+            cursor: pointer;
+          }
+
+          .line-hyphen {
+            max-width: 15px;
+            color: #dae4fe;
+          }
+
+          .text-between-buttons {
+            display: inline-block;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 19px;
+            text-align: center;
+            color: #adb3cb;
+          }
+
+          .btn_second {
+            display: block;
+            padding: 13px 20px;
+            border-radius: 2px;
+            color: #3a79ff;
+            background-color: #d2e1ff;
+            font-family: "QuicksandBold";
+            font-size: 13px;
+            line-height: 16.25px;
+            font-style: normal;
+            font-weight: bold;
+            cursor: pointer;
+          }
+        }
       }
     }
   }
