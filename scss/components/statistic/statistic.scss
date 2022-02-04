@@ -1,0 +1,84 @@
+.statistic {
+  .statistic-wrapper {
+    display: flex;
+
+    .statistic-customers {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      flex-basis: 50%;
+      padding: 66px 90px 66px 0;
+      background-image: linear-gradient(
+        229.32deg,
+        #6888ff 12.77%,
+        #5e80ff 73.11%
+      );
+
+      .statistic-customers-logo {
+        max-width: 66px;
+        margin-bottom: 24px;
+      }
+
+      .statistic-percentage-customers {
+        font-family: "Quicksand";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 83px;
+        text-align: right;
+        letter-spacing: 0.03em;
+        color: #ffffff;
+      }
+
+      .statistic-customers-description {
+        max-width: 265px;
+        font-family: "Quicksand";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: right;
+        letter-spacing: 0.03em;
+        color: #ffffff;
+      }
+    }
+    .statistic-users {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 50%;
+      padding: 70px 0px 66px 90px;
+      background-image: linear-gradient(
+        101.48deg,
+        #e9efff 41.56%,
+        #e0e9ff 81.53%
+      );
+
+      .statistic-users-logo {
+        max-width: 66px;
+        margin-bottom: 24px;
+        color: #5e80ff;
+      }
+
+      .statistic-number-users {
+        font-family: "Quicksand";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 83px;
+        letter-spacing: 0.03em;
+        color: #5e80ff;
+      }
+
+      .statistic-users-description {
+        max-width: 260px;
+        font-family: "Quicksand";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0.03em;
+        color: #5e80ff;
+      }
+    }
+  }
+}

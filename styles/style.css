@@ -465,12 +465,24 @@ header .wrapper-header-content .header-content .header-btn {
 }
 
 .features .about-app {
+  padding: 141px 114px 171px 126px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
-.features .about-app .about-us .title {
-  margin-top: 171px;
+.features .about-app .background-around-features-content {
+  max-width: 1200px;
+  max-height: 543px;
+  padding: 30px 226px 0 214px;
+  background-image: url("../../../images/clouds_features-back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.features .about-app .background-around-features-content .wrapper-features-content {
+  max-width: 760px;
+}
+.features .about-app .background-around-features-content .wrapper-features-content .about-us .title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: bolder;
@@ -481,51 +493,100 @@ header .wrapper-header-content .header-content .header-btn {
   text-align: center;
   color: #3d4f9f;
 }
-.features .about-app .about-us .logo {
+.features .about-app .background-around-features-content .wrapper-features-content .about-us .logo {
   margin-top: 20px;
   font-family: "QuicksandBold";
   font-style: normal;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 24px;
   line-height: 30px;
   text-align: center;
   color: #3d4f9f;
 }
-.features .about-app .features-content {
-  max-width: 761px;
+.features .about-app .background-around-features-content .wrapper-features-content .features-content {
   margin-top: 92px;
 }
-.features .about-app .features-content .features-list {
+.features .about-app .background-around-features-content .wrapper-features-content .features-content .features-list {
   display: flex;
 }
-.features .about-app .features-content .features-list .features-item {
+.features .about-app .background-around-features-content .wrapper-features-content .features-content .features-list .features-item {
   display: flex;
 }
-.features .about-app .features-content .features-list .features-item .features-item-content {
+.features .about-app .background-around-features-content .wrapper-features-content .features-content .features-list .features-item .features-item-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.features .about-app .features-content .features-list .features-item .features-item-content .features-icon {
+.features .about-app .background-around-features-content .wrapper-features-content .features-content .features-list .features-item .features-item-content .features-icon {
+  width: 69px;
+  height: 69px;
   border-radius: 50%;
 }
-.features .about-app .features-content .features-list .features-item .features-item-content .description {
-  max-width: 140px;
+.features .about-app .background-around-features-content .wrapper-features-content .features-content .features-list .features-item .features-item-content .title {
+  margin-top: 33px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 25px;
   text-align: center;
+  color: #4074f8;
 }
-.features .about-app .features-content .features-list .features-item .line-hyphen-list {
-  margin-left: 20px;
+.features .about-app .background-around-features-content .wrapper-features-content .features-content .features-list .features-item .features-item-content .description {
+  max-width: 140px;
+  min-height: 102px;
+  margin-top: 25px;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 19px;
+  text-align: center;
+  color: #adb3cb;
 }
-.features .about-app .features-content .features-item:not(:last-child) {
-  margin: 0 67px 0 0;
+.features .about-app .background-around-features-content .wrapper-features-content .features-content .features-list .features-item .line-hyphen-list {
+  max-width: 28px;
+  margin: 0 19px 0 20px;
+  color: #dae4fe;
 }
-.features .about-app .features-buttons {
+.features .about-app .background-around-features-content .wrapper-features-content .features-buttons {
+  max-width: 337px;
+  margin: 92px 0 0 212px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-.features .about-app .features-buttons .btn_first {
+.features .about-app .background-around-features-content .wrapper-features-content .features-buttons .btn_first {
   display: block;
-  padding: 13px 19px;
+  padding: 13px 22px;
+  border-radius: 2px;
+  color: #d43f3f;
+  background-color: #ffd7d7;
+  font-family: "QuicksandBold";
+  font-size: 13px;
+  line-height: 16.25px;
+  font-style: normal;
+  font-weight: bold;
+  cursor: pointer;
+}
+.features .about-app .background-around-features-content .wrapper-features-content .features-buttons .line-hyphen {
+  max-width: 15px;
+  color: #dae4fe;
+}
+.features .about-app .background-around-features-content .wrapper-features-content .features-buttons .text-between-buttons {
+  display: inline-block;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 19px;
+  text-align: center;
+  color: #adb3cb;
+}
+.features .about-app .background-around-features-content .wrapper-features-content .features-buttons .btn_second {
+  display: block;
+  padding: 13px 20px;
   border-radius: 2px;
   color: #3a79ff;
   background-color: #d2e1ff;
@@ -533,21 +594,76 @@ header .wrapper-header-content .header-content .header-btn {
   font-size: 13px;
   line-height: 16.25px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   cursor: pointer;
 }
-.features .about-app .features-buttons .btn_second {
-  display: block;
-  padding: 13px 19px;
-  border-radius: 2px;
-  color: #3a79ff;
-  background-color: #d2e1ff;
-  font-family: "QuicksandBold";
-  font-size: 13px;
-  line-height: 16.25px;
+
+.statistic .statistic-wrapper {
+  display: flex;
+}
+.statistic .statistic-wrapper .statistic-customers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-basis: 50%;
+  padding: 66px 90px 66px 0;
+  background-image: linear-gradient(229.32deg, #6888ff 12.77%, #5e80ff 73.11%);
+}
+.statistic .statistic-wrapper .statistic-customers .statistic-customers-logo {
+  max-width: 66px;
+  margin-bottom: 24px;
+}
+.statistic .statistic-wrapper .statistic-customers .statistic-percentage-customers {
+  font-family: "Quicksand";
   font-style: normal;
-  font-weight: 700;
-  cursor: pointer;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 83px;
+  text-align: right;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.statistic .statistic-wrapper .statistic-customers .statistic-customers-description {
+  max-width: 265px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: right;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.statistic .statistic-wrapper .statistic-users {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  padding: 70px 0px 66px 90px;
+  background-image: linear-gradient(101.48deg, #e9efff 41.56%, #e0e9ff 81.53%);
+}
+.statistic .statistic-wrapper .statistic-users .statistic-users-logo {
+  max-width: 66px;
+  margin-bottom: 24px;
+  color: #5e80ff;
+}
+.statistic .statistic-wrapper .statistic-users .statistic-number-users {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 83px;
+  letter-spacing: 0.03em;
+  color: #5e80ff;
+}
+.statistic .statistic-wrapper .statistic-users .statistic-users-description {
+  max-width: 260px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: #5e80ff;
 }
 
 /*# sourceMappingURL=style.css.map */
